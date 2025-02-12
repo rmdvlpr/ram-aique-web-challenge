@@ -1,0 +1,30 @@
+.nav {
+    
+
+    .links {
+      text-decoration: none;
+      display: flex;
+      gap: 12px;
+      font-size: 14px;
+      color: #000000;
+  
+      .link {
+        padding: 8px 24px;
+        border-radius: 8px;
+        transition: all 0.3s ease-in-out;
+  
+        &:hover {
+          box-shadow: inset 0 0 0 1px #2D68F8;
+          color: #2D68F8; // Prevents shifting by keeping size constant
+        }
+  
+        &.active {
+          background-color: #2D68F8;
+          color: white;
+          pointer-events: none; // Prevents hover effects on active link
+          box-shadow: none; // Ensures no shadow when active
+        }
+      }
+    }
+  }
+  

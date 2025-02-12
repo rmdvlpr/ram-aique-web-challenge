@@ -1,0 +1,215 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    max-width: 1480px;
+    margin: auto;
+    
+
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 12px;
+
+       
+        .button-container{
+            background-color: #2D68F8;
+            border-radius: 8px;
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            padding: 12px 15px;
+            gap: 8px;
+        }
+    }
+
+
+//! Card styles
+
+.card-container {  
+    max-width: 1480px;
+    display: grid;
+    place-items: center;
+
+    .card {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        border-radius: 8px;
+        align-items: center;
+        box-shadow: 0px 1px 3px 0px #A6AFC366;
+        max-width: 370px;
+
+        .card-img-container {
+            height: 230px;
+            width: 370px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .card-content {
+            padding: 32px;
+            gap: 32px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .button {
+                background-color: #2D68F8;
+                border-radius: 50px;
+                border: 1px solid #2D68F8;
+                color: #FFFFFF;
+                padding: 12px 28px;
+            }
+    
+        }
+    }
+
+
+    
+}
+
+//! Contact styles
+
+.contact-section {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+
+    .contact-line {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px;
+
+        .location {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 0;
+             .logo {
+                display: grid;
+                place-items: center;
+                max-width: 50px;
+                max-height: 50px;
+                border-radius: 8px;
+                background-color: #2D68F8;
+                padding: 12px;
+             }
+        }
+    }
+
+    .contact-form-container {
+        position: relative;
+        padding: 24px;
+        max-width: 734px;
+        width: 100%;
+     
+
+        .contact-form {
+            background: #D4CBFF66;
+            padding: 24px;
+            border-radius: 12px;
+
+            .form-header{
+                padding-bottom: 24px;
+                
+            }
+           
+
+        }
+        .button-container{
+            display: flex;
+            align-items: end;
+            justify-content: end;
+            margin-top: 10px;
+        }
+    }
+
+    
+}
+
+.contact-form-container::before,
+.contact-form-container::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle at center, #2D68F8 0%, #E72DF8 100%);
+    filter: blur(74px);
+    border-radius: 50%;
+    z-index: 20;
+}
+
+.contact-form-container::before {
+    top: 10px;
+    right: -40px;
+}
+
+.contact-form-container::after {
+    bottom: -50px;
+    left: -50px;
+}
+
+
+//? Text Box Style
+.inputBox {
+    position: relative;
+}
+.inputBox input {
+    padding: 20px 10px 10px 10px;
+    width: 100%;
+    border-bottom: 2px solid #ADADAD;
+    background-color: transparent;
+    outline: none;
+    padding-left: 2px;
+    color: black;
+    box-sizing: border-box; /* Ensures the border is included in the element's size */
+
+    &:hover,
+    &:focus {
+        border-bottom: 2px solid #2D68F8;
+    }
+    &::placeholder {
+        position: absolute;
+        color: #333333;
+        font-size: 16px;
+        font-weight: 400;
+
+    }
+}
+.inputBox span {
+    position: absolute;
+    left: -10px;
+    top: 7px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 14px;
+    transition: 0.2s ease-in-out;
+    color: black;
+
+    
+
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+    transform: translateX(2px) translateY(-2px);
+    font-size: 0.70em;
+    padding: 0 10px;
+}
+
+//! End of Text Box Style
+
+   
+}
