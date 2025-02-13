@@ -31,10 +31,10 @@ const cardInfo = [
 
 function Card() {
   return (
-    <div className="w-full max-w-[1480px] flex overflow-x-auto snap-x snap-mandatory scroll-px-6 sm:overflow-visible scrollbar-hide">
-      <div className="flex gap-4 pl-6 pr-12 sm:grid sm:grid-cols-2 lg:grid-cols-4 place-items-center">
+    <div className="w-full max-w-[1480px] flex overflow-x-auto snap-x snap-mandatory scroll-px-6 sm:overflow-visible no-scrollbar">
+      <div className="flex gap-4 pl-4 pr-3  sm:grid sm:grid-cols-2 lg:grid-cols-4 place-items-center">
         {cardInfo.map((card, index) => (
-          <div key={index} className="border rounded-lg shadow-lg overflow-hidden max-w-[370px] flex flex-col items-center snap-start">
+          <div key={index} className="border rounded-lg shadow-sm overflow-hidden max-w-[360px] flex flex-col items-center snap-start">
             <div className="h-[230px] w-[370px]">
               <Image src={card.image} alt={card.title} loading="lazy" className="w-full h-full object-cover rounded-md" />
             </div>

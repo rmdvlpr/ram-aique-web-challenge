@@ -10,7 +10,7 @@ import Button from '../_components/Button'
 
 function HomePage() {
   return (
-    <div className='main-container'>
+    <div className='main-container sm:overflow-hidden lg:overflow-visible'>
       <div className="flex flex-col items-center text-center gap-3 p-[12px]">
         <Image src={rocket} alt="Hero" width={44} height={32} />
         <h1 className="text-[29px] lg:text-[44px] font-semibold leading-[35.1px] lg:leading-[50px] text-center font-inter text-[#2D68F8]">
@@ -23,12 +23,12 @@ function HomePage() {
         </div>
         <Button icon={icon} text="Check our solutions" />
       </div>
-      <div className='card-container w-full'>
+      <div className='w-full'>
         <Card />
       </div>
       <div className='contact-section'>
         <div className='contact-line'>
-          <div className='contact-header'>
+          <div className='contact-header p-2'>
             <p className='text-base text-[#2D68F8] font-bold text-start'>Contact Us</p>
             <p className="font-semibold text-black text-[20px] sm:text-[42px]">Get In Touch With Us</p>
             <p className='text-sm text-black text-normal'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius tempor</p>
@@ -36,7 +36,7 @@ function HomePage() {
           <div>
          <div>
             {[...Array(3)].map((_, i) => (
-              <div key={i} className='location'>
+              <div key={i} className='location px-2'>
                 <div className='logo'>
                   <Image src={house} alt="Icon" width={16.14} height={18} />
                 </div>
