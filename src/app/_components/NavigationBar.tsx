@@ -16,10 +16,10 @@ function NavigationBar() {
         <Link href="/" className={`link ${pathname === "/" ? "active" : ""}`}>
           Home
         </Link>
-        <Link href="/" className={`link ${pathname === "/" ? "active" : ""}`}>
+        <Link href="/" className={`link ${pathname === "/about" ? "active" : ""}`}>
           About
         </Link>
-        <Link href="/" className={`link ${pathname === "/" ? "active" : ""}`}>
+        <Link href="/" className={`link ${pathname === "/contact" ? "active" : ""}`}>
           Contact
         </Link>
       </div>
