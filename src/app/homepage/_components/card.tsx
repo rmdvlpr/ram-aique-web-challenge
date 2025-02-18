@@ -29,6 +29,8 @@ const cardInfo = [
   }
 ]
 
+//! {  {cardInfo.map((card, index) => ( is to map the cardInfo array to the Card component}
+
 function Card() {
   return (
     <div className="w-full max-w-[1480px] flex overflow-x-auto snap-x snap-mandatory scroll-px-6 sm:overflow-visible no-scrollbar">

@@ -35,6 +35,11 @@ function HomePage() {
           </div>
           <div>
          <div>
+
+          {/*  This Mapping is for the locations in order for me to replicate the 
+          code block of the locations without manually typing the code, this is to ensure of
+           cleanliness of codes and remove redundancy */}
+           
             {[...Array(3)].map((_, i) => (
               <div key={i} className='location px-2'>
                 <div className='logo'>

@@ -10,6 +10,7 @@ $large : 1024px;
     @media screen and (max-width: $small) {
         overflow: hidden;
     }
+    //! This Media Query is to apply overflow when it reaches the specific screen size
     
     flex-direction: column;
     align-items: center;
@@ -149,6 +150,8 @@ $large : 1024px;
     
 }
 
+
+//! Style for the the Gradient Effect in the card
 .contact-form-container::before,
 .contact-form-container::after {
     content: "";
